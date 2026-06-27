@@ -1,0 +1,6 @@
+{
+  "name": "Premium Grooming Studio",
+  "description": "A luxury grooming studio services menu featuring tiered pricing, dark mode visuals, and smooth modal interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
