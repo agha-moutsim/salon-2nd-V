@@ -136,6 +136,10 @@ export default function Footer() {
         }
       ` }} />
 
+      {/* Seamless blend layers - Ambient bleed from FAQ section */}
+      <div className="pointer-events-none absolute top-0 left-0 w-full h-[250px] bg-gradient-to-b from-[#0D0102] via-[#0D0102]/60 to-transparent z-[1]" />
+      <div className="pointer-events-none absolute -top-[200px] left-1/2 -translate-x-1/2 w-[120vw] max-w-[1500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(241,225,148,0.06)_0%,_rgba(126,27,34,0.15)_45%,_transparent_75%)] blur-[90px] z-[1] mix-blend-screen opacity-80" />
+
       {/* Ghost watermark */}
       <div className="ghost-text" aria-hidden="true">
         ZAYN&apos;S
@@ -180,6 +184,7 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
+          <img src="/logo/logo.png" alt="Zayn's Salon Logo" className="w-40 md:w-48 h-auto -mb-2 pointer-events-none" />
           <div className="flex flex-col gap-1">
             <span className="brand-eyebrow text-[0.6rem] font-semibold tracking-[0.28em] text-[#F1E194] uppercase opacity-85">
               — The Hair Heaven

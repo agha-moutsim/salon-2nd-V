@@ -26,20 +26,20 @@ function FAQItem({ num, question, answer, isOpen, onToggle }: FAQItemProps) {
         }`}
       />
 
-      <div className="flex items-start justify-between gap-5 p-9 pl-11 sm:gap-6 sm:p-7 sm:pl-9">
-        <span className="faq-q-num mt-[6px] shrink-0 font-poppins text-[11px] font-medium tracking-[0.1em] text-[#C8BC6A] opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:text-[#F1E194]">
+      <div className="flex items-start justify-between gap-5 p-7 sm:gap-6 sm:p-9 sm:pl-11">
+        <span className="faq-q-num mt-[4px] shrink-0 font-poppins text-[10px] font-semibold tracking-[0.15em] text-[#C8BC6A] opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:text-[#F1E194]">
           {num}
         </span>
         
         <span
-          className={`faq-q-text flex-1 transition-all duration-300 tracking-normal text-[#FAF7EE] group-hover:text-[#F1E194]`}
-          style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 500, fontSize: "clamp(16px, 1.8vw, 19px)" }}
+          className={`faq-q-text flex-1 transition-all duration-300 text-[#FAF7EE] group-hover:text-[#F1E194]`}
+          style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 400, fontSize: "clamp(20px, 2.2vw, 26px)", letterSpacing: "0.02em", lineHeight: 1.3 }}
         >
           {question}
         </span>
 
         <span
-          className={`faq-toggle mt-[2px] flex h-[30px] w-[30px] shrink-0 items-center justify-center rounded-full border border-[#F1E194]/20 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+          className={`faq-toggle mt-[6px] flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full border border-[#F1E194]/20 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${
             isOpen ? "rotate-45 border-[#F1E194] bg-[#F1E194]" : "group-hover:border-[#F1E194]/50"
           }`}
         >
@@ -48,7 +48,7 @@ function FAQItem({ num, question, answer, isOpen, onToggle }: FAQItemProps) {
             fill="none"
             strokeWidth="1.5"
             strokeLinecap="round"
-            className={`h-3 w-3 transition-colors duration-300 ${
+            className={`h-[14px] w-[14px] transition-colors duration-300 ${
               isOpen ? "stroke-[#3D0A0E]" : "stroke-[#F1E194]"
             }`}
           >
@@ -58,21 +58,15 @@ function FAQItem({ num, question, answer, isOpen, onToggle }: FAQItemProps) {
         </span>
       </div>
 
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.45, ease: [0.25, 1, 0.5, 1] }}
-            className="overflow-hidden"
-          >
-            <div className="mx-11 border-t border-[#F1E194]/10 pb-9 pt-5 text-sm font-light leading-[1.85] text-[#FAF7EE]/60 sm:mx-9 sm:pb-7">
-              {answer}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div 
+        className={`transition-all duration-500 ease-in-out overflow-hidden transform-gpu ${isOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}
+      >
+        <div className="mx-8 sm:mx-12 border-t border-[#F1E194]/10 pb-9 pt-6">
+          <p className="text-[14px] sm:text-[15px] font-light leading-[1.8] text-[#FAF7EE]/70 font-poppins tracking-wide">
+            {answer}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -114,9 +108,13 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="relative px-6 py-24 sm:py-32 font-poppins text-[#FAF7EE] overflow-hidden" style={{ background: "#2B0508" }} aria-label="Frequently Asked Questions">
+    <section className="relative px-6 py-32 sm:py-40 font-poppins text-[#FAF7EE] overflow-hidden" style={{ background: "linear-gradient(180deg, #0D0102 0%, #150204 35%, #2B0508 75%, #0D0102 100%)" }} aria-label="Frequently Asked Questions">
+      {/* Seamless blend layers - Top mask & ambient bleed */}
+      <div className="pointer-events-none absolute top-0 left-0 w-full h-[250px] bg-gradient-to-b from-[#0D0102] via-[#0D0102]/60 to-transparent z-0" />
+      <div className="pointer-events-none absolute -top-[200px] left-1/2 -translate-x-1/2 w-[120vw] max-w-[1500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(241,225,148,0.06)_0%,_rgba(126,27,34,0.15)_45%,_transparent_75%)] blur-[90px] z-0 mix-blend-screen opacity-80" />
+      
       {/* Background glow effects */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-radial from-[#7A1520]/20 to-transparent blur-[120px]" />
+      <div className="pointer-events-none absolute left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,_rgba(122,21,32,0.15)_0%,_transparent_70%)] blur-[100px] z-0" />
       
       <div className="relative z-10 mx-auto max-w-[1100px]">
         {/* FAQ Header */}

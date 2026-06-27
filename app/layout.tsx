@@ -1,6 +1,8 @@
 import type {Metadata} from 'next';
 import { Poppins, Playfair_Display } from 'next/font/google';
 import './globals.css'; // Global styles
+import LenisProvider from '@/components/LenisProvider';
+import CustomCursor from '@/components/CustomCursor';
 
 const poppins = Poppins({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -24,7 +26,10 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" className={`${poppins.variable} ${playfair.variable}`} suppressHydrationWarning>
       <body className="font-poppins bg-[#3B070A] text-[#E8D9C0] antialiased min-h-screen">
-        {children}
+        <LenisProvider>
+          <CustomCursor />
+          {children}
+        </LenisProvider>
       </body>
     </html>
   );

@@ -5,3 +5,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Large media files - host these on a CDN or cloud storage instead
+public/*.mp4
+public/*.mov
+public/*.webm

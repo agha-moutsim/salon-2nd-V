@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0102;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #5B0E14, #F1E194);
+  border-radius: 8px;
+  border: 2px solid #0D0102; /* Creates a padding effect inside the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #7A131B, #f4e8b3);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #F1E194 #0D0102;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  50% { transform: translateX(300%) skewX(-20deg); }
+  100% { transform: translateX(300%) skewX(-20deg); }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite;
+}

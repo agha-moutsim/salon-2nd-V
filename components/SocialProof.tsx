@@ -339,7 +339,7 @@ export default function SocialProof() {
           background:
             radial-gradient(ellipse 80% 60% at 15% 0%, rgba(241,225,148,0.15), transparent 60%),
             radial-gradient(ellipse 70% 50% at 100% 100%, rgba(126,27,34,0.35), transparent 60%),
-            linear-gradient(180deg, #2B0508 0%, #5B0E14 50%, #0D0102 100%);
+            linear-gradient(180deg, #0D0102 0%, #2B0508 30%, #5B0E14 60%, #0D0102 100%);
           color:var(--cream);
           overflow:hidden;
           padding:clamp(80px, 11vw, 150px) 0 clamp(80px, 9vw, 120px);
@@ -773,6 +773,10 @@ export default function SocialProof() {
         }
       ` }} />
       <section ref={containerRef} className="social-proof font-poppins" id="social-proof">
+        {/* Seamless blend layers - Top mask & ambient bleed from Services section */}
+        <div className="pointer-events-none absolute top-0 left-0 w-full h-[250px] bg-gradient-to-b from-[#0D0102] via-[#0D0102]/60 to-transparent z-[2]" />
+        <div className="pointer-events-none absolute -top-[200px] left-1/2 -translate-x-1/2 w-[120vw] max-w-[1500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(241,225,148,0.06)_0%,_rgba(126,27,34,0.15)_45%,_transparent_75%)] blur-[90px] z-[2] mix-blend-screen opacity-80" />
+
         <motion.div className="sp-blob sp-blob-1" style={{ y: blob1Y }}></motion.div>
         <motion.div className="sp-blob sp-blob-2" style={{ y: blob2Y }}></motion.div>
         <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none z-0 opacity-40" />
