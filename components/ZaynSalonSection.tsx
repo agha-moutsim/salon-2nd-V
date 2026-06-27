@@ -53,24 +53,24 @@ export default function ZaynSalonSection() {
           <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-5 md:grid-rows-3 lg:grid-rows-2 gap-2 md:gap-4">
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="/video1.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1842.1.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="/video2.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1847.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="/video3.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1874.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="/video4.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1879.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             {/* The 5th video spans 2 columns on tablet and desktop to balance the grid beautifully */}
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 md:col-span-2 lg:col-span-2 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="/video5.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1903.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
 
           </div>
