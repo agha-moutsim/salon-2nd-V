@@ -70,7 +70,7 @@ export default function ZaynSalonSection() {
             
             {/* The 5th video spans 2 columns on tablet and desktop to balance the grid beautifully */}
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 md:col-span-2 lg:col-span-2 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="/salon-grid-5.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://res.cloudinary.com/dk5wfrjyt/video/upload/v1782605402/048A1842_1_fmgaav.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
 
           </div>
