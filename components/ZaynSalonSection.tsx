@@ -53,24 +53,24 @@ export default function ZaynSalonSection() {
           <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-5 md:grid-rows-3 lg:grid-rows-2 gap-2 md:gap-4">
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1842.1.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://res.cloudinary.com/dk5wfrjyt/video/upload/v1782665542/048A1859_ggx7kh.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1847.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://res.cloudinary.com/dk5wfrjyt/video/upload/v1782665619/048A1871_udgbaw.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1874.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://res.cloudinary.com/dk5wfrjyt/video/upload/v1782665645/048A1995_bbepfe.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1879.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="https://res.cloudinary.com/dk5wfrjyt/video/upload/v1782665144/048A2080_p17kqt.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
             
             {/* The 5th video spans 2 columns on tablet and desktop to balance the grid beautifully */}
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-zinc-900 md:col-span-2 lg:col-span-2 transform-gpu" style={{ transform: "translateZ(0)" }}>
-              {isInView && <video src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/048A1903.MP4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
+              {isInView && <video src="/salon-grid-5.mp4" autoPlay loop muted playsInline preload="none" disableRemotePlayback className="absolute inset-0 w-full h-full object-cover" />}
             </div>
 
           </div>

@@ -10,7 +10,7 @@ export default function HeroSection({ onBookClick }: HeroSectionProps) {
   return (
     <section id="home" className="relative w-full h-[100dvh] bg-black">
       <video 
-        src="https://github.com/agha-moutsim/salon-2nd-V/releases/download/untagged-f4327a45f27a3ef5e32c/hero%20vedio.mp4" 
+        src="https://res.cloudinary.com/dk5wfrjyt/video/upload/v1782665903/hero-vedio_n2e6ci.mp4" 
         autoPlay 
         loop 
         muted 
